@@ -489,10 +489,26 @@ section {
   grid-gap: 30px;
 }
 
-.last__box-img {
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 0.4em;
+.last__box {
+  position: relative;
   overflow: hidden;
+}
+
+.last__box-img {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.2em;
+  overflow: hidden;
+  position: relative;
+}
+
+.last__box-img::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .last__box-img:hover img {
@@ -503,16 +519,27 @@ section {
 
 .last__box-img img {
   max-width: 100%;
-  height: 100%;
+  height: auto;
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear;
 }
 
 .last__box-title {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-top: none;
+  border-bottom: none;
   padding-left: 5px;
   margin-top: 5px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  position: absolute;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .last__link {
@@ -543,10 +570,26 @@ section {
   margin: 0 auto;
 }
 
+.projects__box {
+  position: relative;
+  overflow: hidden;
+}
+
 .projects__box-img {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 0.8em;
   overflow: hidden;
+  position: relative;
+}
+
+.projects__box-img::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .projects__box-img:hover img {
@@ -557,7 +600,7 @@ section {
 
 .projects__box-img img {
   max-width: 100%;
-  height: 100%;
+  height: auto;
   min-height: 220px;
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
@@ -565,7 +608,9 @@ section {
 }
 
 .projects__box-info {
-  margin-top: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,29 +620,24 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .projects__box-title {
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
   font-family: 'Open Sans', sans-serif;
   padding-left: 6px;
-  color: #8998a5;
+  color: rgba(255, 255, 255, 0.644);
   font-size: 1.2em;
   font-weight: 700;
   letter-spacing: normal;
-}
-
-.projects__box-type {
-  position: relative;
-  -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-          transform: translateY(-2px);
-  color: #cecece;
-  letter-spacing: 110%;
-  text-transform: lowercase;
-  font-size: 16px;
-  padding: 2px 5px;
-  border: 1px solid #181818;
-  border-radius: 0.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
 }
 
 .projects__content-container {
