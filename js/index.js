@@ -1,19 +1,7 @@
-// jQuery(window).scroll(function(){
-//             var $sections = $('section');
-// 	$sections.each(function(i,el){
-//         var top  = $(el).offset().top-100;
-//         var bottom = top +$(el).height();
-//         var scroll = $(window).scrollTop();
-//         var id = $(el).attr('id');
-//     	if( scroll > top && scroll < bottom){
-//             $('a.active').removeClass('active');
-// 			$('a[href="#'+id+'"]').addClass('active');
 
-//         }
-//     })
-// });
 
-    
+
+
 //   плавный скролл к якорям
 $(".sidebar__list").on("click","a", function (event) {
         // исключаем стандартную реакцию браузера
@@ -25,39 +13,6 @@ $(".sidebar__list").on("click","a", function (event) {
         // анимируем переход к блоку, время: 800 мс
         $('body,html').animate({scrollTop: top}, 400);
 });
-
-// smooth scrolling 
-
-SmoothScroll({
-    // Время скролла 400 = 0.4 секунды
-    animationTime    : 600,
-    // Размер шага в пикселях 
-    stepSize         : 100,
-
-    // Дополнительные настройки:
-    
-    // Ускорение 
-    accelerationDelta : 30,  
-    // Максимальное ускорение
-    accelerationMax   : 1,   
-
-    // Поддержка клавиатуры
-    keyboardSupport   : true,  
-    // Шаг скролла стрелками на клавиатуре в пикселях
-    arrowScroll       : 50,
-
-    // Pulse (less tweakable)
-    // ratio of "tail" to "acceleration"
-    pulseAlgorithm   : true,
-    pulseScale       : 4,
-    pulseNormalize   : 1,
-
-    // Поддержка тачпада
-    touchpadSupport   : true,
-});
-
-
-
 
 Vue.component('project', {
 	props: ['project'],
@@ -90,3 +45,35 @@ const app = new Vue({
 		]
 	}
 }).$mount('#projects-container')
+
+
+
+
+
+// SmoothScroll({
+//     // Время скролла 400 = 0.4 секунды
+//     animationTime    : 600,
+//     // Размер шага в пикселях 
+//     stepSize         : 100,
+
+//     // Дополнительные настройки:
+    
+//     // Ускорение 
+//     accelerationDelta : 30,  
+//     // Максимальное ускорение
+//     accelerationMax   : 1,   
+
+//     // Поддержка клавиатуры
+//     keyboardSupport   : true,  
+//     // Шаг скролла стрелками на клавиатуре в пикселях
+//     arrowScroll       : 50,
+
+//     // Pulse (less tweakable)
+//     // ratio of "tail" to "acceleration"
+//     pulseAlgorithm   : true,
+//     pulseScale       : 4,
+//     pulseNormalize   : 1,
+
+//     // Поддержка тачпада
+//     touchpadSupport   : true,
+// });

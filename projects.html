@@ -29,18 +29,19 @@
         </header>
         
         <div class="content-container projects__content-container">
-            <div class="projects">
-    <div class="projects__container" id="projects-container">
-        <project v-for="project in projects" v-bind:project="project"></project>
-        
-    </div>
 
-    <div class="projects__descr">Больше работ можно увидеть в 
-        <div class="projects__descr-link">
-            <a target="_blank" href="https://github.com/agentdmitro?tab=repositories">GitHub репозитории</a>
-        </div>
-    </div>
-</div>
+            
+            <div class="projects">
+                <div class="projects__container" id="projects-container">
+                    <project v-for="project in projects" v-bind:project="project"></project>
+                </div>
+            
+                <div class="projects__descr">Больше работ можно увидеть в 
+                    <div class="projects__descr-link">
+                        <a target="_blank" href="https://github.com/agentdmitro?tab=repositories">GitHub репозитории</a>
+                    </div>
+                </div>
+            </div>
             
         </div>
         
@@ -48,8 +49,8 @@
 
 
     <script src="js/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script> -->
 <script src="js/index.min.js"></script>
 </body>
 </html>
