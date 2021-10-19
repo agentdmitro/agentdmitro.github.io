@@ -219,10 +219,19 @@ section {
 
 .header {
   position: absolute;
-  top: 24px;
+  top: 0px;
   left: 0;
   width: 100%;
   z-index: 2;
+  padding: 12px;
+}
+
+.header-page {
+  background: #212429;
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 7px 15px 0px rgba(34, 60, 80, 0.2);
+  position: unset;
+  margin-bottom: 20px;
 }
 
 .header__list {
@@ -580,7 +589,6 @@ section {
 .projects__container {
   max-width: 98%;
   margin: 0 auto;
-  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
