@@ -18,38 +18,38 @@ $(".sidebar__list").on("click","a", function (event) {
 
 
 
-Vue.component('project', {
-	props: ['project'],
-	template: `
-    <a :href=" project.link " class="projects__box" target="_blank">
-        <div class="projects__box-img"><img :src="'img/projects/' + project.img + '.png'" :alt="project.title" loading="lazy"></div>
-        <div class="projects__box-info">
-            <div class="projects__box-title">{{ project.title }}</div>
-        </div>
-    </a>
-    `
-})
+// Vue.component('project', {
+// 	props: ['project'],
+// 	template: `
+//     <a :href=" project.link " class="projects__box" target="_blank">
+//         <div class="projects__box-img"><img :src="'img/projects/' + project.img + '.png'" :alt="project.title" loading="lazy"></div>
+//         <div class="projects__box-info">
+//             <div class="projects__box-title">{{ project.title }}</div>
+//         </div>
+//     </a>
+//     `
+// })
 
 
-const projectsparent = new Vue({
-    el: '#projects-container',
-	data: {
-		projects: [
-			{ title: 'Курс по сборке ПК', img: 'course', type: 'Лендинг', link: 'https://agentdmitro.github.io/Course/' },
-			{ title: 'IT-Meteor', img: 'meteor', type: 'e-commerce', link: 'https://it-meteor.ru/' },
-			{ title: 'skinTrade', img: 'skintrade', type: 'Лендинг', link: 'https://agentdmitro.github.io/SkinTrade/' },
-			{ title: 'Gravity', img: 'gravity', type: 'Лендинг', link: 'https://agentdmitro.github.io/Gravity' },
-			{ title: 'I-Lights', img: 'iLights', type: 'Интернет-магазин', link: 'https://agentdmitro.github.io/I-Lights' },
-			{ title: 'instaBot', img: 'instaBot', type: 'Лендинг', link: 'https://agentdmitro.github.io/InstaBOT' },
-			{ title: 'LaslesVPN', img: 'lasles', type: 'лендинг', link: 'https://agentdmitro.github.io/LaslesVPN' },
-			{ title: 'AllBirds', img: 'allbirds', type: 'лендинг', link: 'https://agentdmitro.github.io/AllBirds' },
-			{ title: 'Crappo', img: 'crappo', type: 'лендинг', link: 'https://agentdmitro.github.io/Crappo' },
-			{ title: 'SushiBox', img: 'suchibox', type: 'интернет-магазин', link: 'https://agentdmitro.github.io/SuchiBox' },
-			{ title: 'Mafia', img: 'mafia', type: 'интернет-магазин', link: 'https://agentdmitro.github.io/mafia' },
-			{ title: 'Design agency', img: 'designAgency', type: 'лендинг', link: 'https://agentdmitro.github.io/DesignAgency' },
-		]
-	}
-})
+// const projectsparent = new Vue({
+//     el: '#projects-container',
+// 	data: {
+// 		projects: [
+// 			{ title: 'Курс по сборке ПК', img: 'course', type: 'Лендинг', link: 'https://agentdmitro.github.io/Course/' },
+// 			{ title: 'IT-Meteor', img: 'meteor', type: 'e-commerce', link: 'https://it-meteor.ru/' },
+// 			{ title: 'skinTrade', img: 'skintrade', type: 'Лендинг', link: 'https://agentdmitro.github.io/SkinTrade/' },
+// 			{ title: 'Gravity', img: 'gravity', type: 'Лендинг', link: 'https://agentdmitro.github.io/Gravity' },
+// 			{ title: 'I-Lights', img: 'iLights', type: 'Интернет-магазин', link: 'https://agentdmitro.github.io/I-Lights' },
+// 			{ title: 'instaBot', img: 'instaBot', type: 'Лендинг', link: 'https://agentdmitro.github.io/InstaBOT' },
+// 			{ title: 'LaslesVPN', img: 'lasles', type: 'лендинг', link: 'https://agentdmitro.github.io/LaslesVPN' },
+// 			{ title: 'AllBirds', img: 'allbirds', type: 'лендинг', link: 'https://agentdmitro.github.io/AllBirds' },
+// 			{ title: 'Crappo', img: 'crappo', type: 'лендинг', link: 'https://agentdmitro.github.io/Crappo' },
+// 			{ title: 'SushiBox', img: 'suchibox', type: 'интернет-магазин', link: 'https://agentdmitro.github.io/SuchiBox' },
+// 			{ title: 'Mafia', img: 'mafia', type: 'интернет-магазин', link: 'https://agentdmitro.github.io/mafia' },
+// 			{ title: 'Design agency', img: 'designAgency', type: 'лендинг', link: 'https://agentdmitro.github.io/DesignAgency' },
+// 		]
+// 	}
+// })
 
 
 
